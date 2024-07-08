@@ -40,13 +40,13 @@ class HomeView extends GetView<HomeController> {
                       contentPadding: EdgeInsets.symmetric(horizontal: 24.w),
                       title: Text(
                         'Good morning',
-                        style: theme.textTheme.bodyText2?.copyWith(
+                        style: theme.textTheme.bodyMedium?.copyWith(
                           fontSize: 12.sp
                         ),
                       ),
                       subtitle: Text(
                         'Amelia Barlow',
-                        style: theme.textTheme.headline5?.copyWith(
+                        style: theme.textTheme.headlineSmall?.copyWith(
                           fontWeight: FontWeight.normal,
                         ),
                       ),
@@ -130,11 +130,11 @@ class HomeView extends GetView<HomeController> {
                         children: [
                           Text(
                             'Categories 😋',
-                            style: theme.textTheme.headline4,
+                            style: theme.textTheme.headlineMedium,
                           ),
                           Text(
                             'See all',
-                            style: theme.textTheme.headline6?.copyWith(
+                            style: theme.textTheme.titleLarge?.copyWith(
                               color: theme.primaryColor,
                               fontWeight: FontWeight.normal,
                             ),
@@ -154,11 +154,11 @@ class HomeView extends GetView<HomeController> {
                         children: [
                           Text(
                             'Best selling 🔥',
-                            style: theme.textTheme.headline4,
+                            style: theme.textTheme.headlineMedium,
                           ),
                           Text(
                             'See all',
-                            style: theme.textTheme.headline6?.copyWith(
+                            style: theme.textTheme.titleLarge?.copyWith(
                               color: theme.primaryColor,
                               fontWeight: FontWeight.normal,
                             ),

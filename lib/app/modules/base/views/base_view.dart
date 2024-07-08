@@ -77,14 +77,14 @@ class BaseView extends GetView<BaseController> {
               position: BadgePosition.bottomEnd(bottom: -16, end: 13),
               badgeContent: Text(
                 controller.cartItemsCount.toString(),
-                style: theme.textTheme.bodyText2?.copyWith(
+                style: theme.textTheme.bodyMedium?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               badgeStyle: BadgeStyle(
                 elevation: 2,
-                badgeColor: theme.accentColor,
+                badgeColor: theme.colorScheme.secondary,
                 borderSide: const BorderSide(color: Colors.white, width: 1),
               ),
               child: CircleAvatar(

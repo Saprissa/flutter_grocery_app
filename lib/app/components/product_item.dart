@@ -54,7 +54,7 @@ class ProductItem extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(product.name, style: theme.textTheme.headline6)
+                  Text(product.name, style: theme.textTheme.titleLarge)
                     .animate().fade().slideY(
                       duration: 200.ms,
                       begin: 1, curve: Curves.easeInSine,
@@ -62,8 +62,8 @@ class ProductItem extends StatelessWidget {
                   5.verticalSpace,
                   Text(
                     '1kg, ${product.price}\$',
-                    style: theme.textTheme.headline5?.copyWith(
-                      color: theme.accentColor,
+                    style: theme.textTheme.headlineSmall?.copyWith(
+                      color: theme.colorScheme.secondary,
                     ),
                   ).animate().fade().slideY(
                     duration: 200.ms,

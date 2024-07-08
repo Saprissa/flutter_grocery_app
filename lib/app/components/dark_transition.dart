@@ -118,7 +118,7 @@ class _DarkTransitionState extends State<DarkTransition>
   @override
   Widget build(BuildContext context) {
     isDark = _darkNotifier.value;
-    Widget _body(int index) {
+    Widget body(int index) {
       return ValueListenableBuilder<bool>(
         valueListenable: _darkNotifier,
         builder: (BuildContext context, bool isDark, Widget? child) {
@@ -137,12 +137,12 @@ class _DarkTransitionState extends State<DarkTransition>
       builder: (BuildContext context, Widget? child) {
         return Stack(
           children: [
-            _body(1),
+            body(1),
             ClipPath(
               clipper: CircularClipper(
                 _animationController.value * radius, position,
               ),
-              child: _body(2),
+              child: body(2),
             ),
           ],
         );
